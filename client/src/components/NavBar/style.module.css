@@ -1,0 +1,30 @@
+.component {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin: 2% 10%;
+  align-items: baseline;
+  
+}
+.item1{
+
+  flex-basis: 15%;
+  
+  text-align: left;
+  left: 0;
+}
+.item2{
+
+  flex-basis: 50%;
+
+}
+.item3{
+
+  flex-basis: 25%;
+
+}
+.component a{
+  text-decoration: none;
+  font-size: 39px;
+
+}

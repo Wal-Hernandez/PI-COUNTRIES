@@ -1,0 +1,14 @@
+export const GET_COUNTRIES = 'GET_COUNTRIES';
+export const GET_COUNTRY_DETAIL = 'GET_COUNTRY_DETAL';
+export const POST_ACTIVITY = 'POST_ACTIVITY';
+export const SET_LOADING = 'SET_LOADING';
+export const PAGINATE_RESULTS = 'PAGINATE_RESULTS';
+export const RESET_RESPONSE = 'RESET_RESPONSE';
+export const SEARCH_COUNTRY = 'SEARCH_COUNTRY'; 
+export const FILTER_TYPES = 'FILTER_TYPES'; 
+export const ORDER_BY_NAME = 'ORDER_BY_NAME'; 
+export const FILTER_CONTINENT = 'FILTER_CONTINENT';
+export const SET_PAGE = 'SET_PAGE'; 
+export const CLEAN_SEARCH = 'CLEAN_SEARCH';  
+export const FILTER_REGION = 'FILTER_REGION'; 
+export const GET_ACTIVITIES = 'GET_ACTIVITIES'; 

@@ -1,0 +1,31 @@
+.background{
+    background-color: #555;
+}
+
+.select{
+   background: transparent;
+    margin: 0.5% 0%;
+    padding-left: 0%;
+    font-size: 26px;
+    text-decoration: none;
+    width: 22.3%; 
+    color:#ccc;
+    align-items: flex-start;
+}   
+
+.select:focus{
+  background-color:#fff;
+  color: #f93f23;
+  transition: 0s;
+  }
+
+
+.option{
+    background-color: #fff;
+    color: #f93f23;
+    font-size: 26px;
+    position: absolute;
+    
+}
+
+

@@ -1,0 +1,67 @@
+.background {
+	background-image: none;
+	width: 100%;
+	min-height: 100vh;
+	background-image: url('../../utils/background.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	backdrop-filter: blur(4px);
+	background-blend-mode: overlay;
+}
+
+.component{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    
+
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+.component button {    
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 10% 0% 10% 6%;
+	
+    -webkit-box-shadow: 5px 0px 75px 17px rgba(0,0,0,0.54);
+    -moz-box-shadow: 5px 0px 75px 17px rgba(0,0,0,0.54);
+    box-shadow: 5px 0px 75px 17px rgba(0,0,0,0.54);
+    
+}
+
+button:hover {
+   color:#804000  ;
+}
+.title{
+    font-weight: 150;
+    font-size:3rem;
+    font-size: 5rem;
+    color: #fff
+}
+
+
+
+
+@media (max-width: 600px) {
+    .component{
+        background-image: url('../../utils/start-celu.png');
+    }
+    .component button {    
+      
+       
+        padding: 25% 0% 25% 30%;
+        
+    }
+    .title{
+        font-size:1.8rem;
+    }
+}
+
+

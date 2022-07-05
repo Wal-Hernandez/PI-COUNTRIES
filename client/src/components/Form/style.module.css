@@ -1,0 +1,106 @@
+
+.navFixed{
+    position: fixed;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    top: 0;
+}
+
+
+  .navFixed a{
+	color: #181818;
+  }
+  .navFixed input{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+.background {
+	background-image: url('../../utils/background.jpg');
+    background-repeat: no-repeat;
+   height: 1272px;
+ 
+
+
+}
+
+.component{
+ 
+  
+   width: 100%;
+   height: 600px;
+}
+.component *{
+    font-family: 'Oswald-Light', sans-serif;
+    font-weight: bold;
+}
+.submitTitle{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: rgba(128, 128, 128, 0.61);
+  font-size: 50px;
+}
+.flexItems{  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100%;
+    padding-top: 15%;
+    align-items: flex-start;
+    padding-left: 25%;
+}
+.boxTitle{
+    background-color: rgba(128, 128, 128, 0.61);
+    display: flex;
+    flex-direction: row;
+   
+    width: 700px;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.boxTitle *{
+    
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.selectedDiet{
+    background-color: rgba(128, 128, 128, 0.61);
+    position: absolute;
+    object-fit: cover;
+    height: 800px;
+    width: 180px;
+    right: 11%;
+    top: 39%;
+ 
+    font-size: 20px;
+}
+.boxDesc{
+    background-color: rgba(128, 128, 128, 0.61);
+    margin-bottom: 5%;
+}
+.boxDesc * {
+    font-size:  25px;
+}
+
+.recipeImage{
+    
+    padding-bottom: 5%;
+}
+.recipeText{
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    justify-content: space-between;
+}
+
+
+textarea{width: 300px;
+    height: 150px;}
+
+option{
+    color : #181818;
+    font-size: 20px;    
+}
+option *{
+    font-size: 20px;
+}
+button{
+    font-size: 20px;
+}

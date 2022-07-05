@@ -1,0 +1,55 @@
+
+
+.component {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: 0%  10%;
+    align-items: baseline;
+  }
+  .component  h2{
+    font-weight:lighter;
+  }
+  
+.filters {
+  
+display: flex;
+align-items: baseline;
+ justify-content: space-around;
+ width: 40%;
+}
+.filters *{
+font-size: 14px;
+}
+.filters h3{
+font-weight: bold;
+}
+
+.option{
+    color: #fff;    
+background: #181818;
+width: 100px;
+
+}
+.option2{
+
+    background: #181818;
+color: #fff;
+}
+option{
+color: #fff;
+}
+.btn{
+background: transparent;
+border: none;
+color: #fff;
+font-weight: bold;
+}
+.btn:hover{
+cursor: pointer;
+background:#f93f23;
+color: #fff;
+}
+.or{
+    margin-left: 10px;
+}

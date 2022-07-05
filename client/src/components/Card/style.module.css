@@ -1,0 +1,71 @@
+
+.component{
+	display: flex;
+	flex-direction: column;
+	
+	flex-wrap: wrap;
+	margin: 0.8%;
+	width: 357px;
+	height: 425px;
+}
+.item1{
+	height: 55%;
+	background:#ff9;
+}
+.item1 img{
+	
+	height: 100%;
+	width: 100%;
+}
+
+.item2{
+	
+	height: 45%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	
+	
+}
+.title{
+
+	margin: 0% 5%;
+	
+
+}
+.title h4{
+	text-align: start;
+	font-family: 'Oswald-Light', sans-serif;
+	font-size: 20px;
+	color:#f93f23;
+	letter-spacing: 1px;
+}
+.title h3{
+	text-align: start;
+	font-size: 25px;
+}
+.info{
+	width: 100%;
+	padding: 0% 5%;
+	
+	
+}
+.diets{
+	text-align: start;	
+	margin: 0 auto;
+	width: 100%;
+	font-family: 'Oswald-Light', sans-serif;
+
+}
+.item24{
+	width: 100%;
+background-color: gainsboro;
+}
+.item24 h1{
+	font-size: 1.1rem;
+	text-align: right;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	margin-right: 5%;
+}
