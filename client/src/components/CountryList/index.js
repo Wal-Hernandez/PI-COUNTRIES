@@ -52,7 +52,7 @@ function CountryList() {
   ) : (
     <>
       {parseQuery(location).search && (
-        <h2>Games marching "{parseQuery(location)}":</h2>
+        <h2 className={style.match}>Games marching "{parseQuery(location)}":</h2>
       )}
 
       <div className={style.component}>
