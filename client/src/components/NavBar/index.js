@@ -11,6 +11,9 @@ function NavBar() {
             <div className={style.item1}> <NavLink to='/'>
             Home
             </NavLink>
+            <NavLink to='/countries'>
+            Countries
+            </NavLink>
             </div>
             <div className={style.item2}>
             <Search  />

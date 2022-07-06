@@ -1,83 +1,90 @@
-
-
 .component {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   justify-items: center;
- height: 100%;
-background-color: rgb(255, 255, 255);
-  align-items: flex-start;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+}
+a{
+  font-size: 2rem;
+}
+.item1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  margin-top: 3%;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  align-items: center;
+}
+.titlebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  font-size: 25px;
+  padding: 0% 5%;
+}
 
-  }
- 
-  .item1{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-   
-    flex-wrap: wrap;
-    overflow: hidden;
-    justify-content: center;
-    margin-top: 15%;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    
-  }
-  .titlebox{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 50%;
-    font-size: 25px;
-    padding: 0% 5%;
-
-  }
-  
- .titlebox *{
-  font-family: 'Oswald-Light', sans-serif;
- }
- .titlebox h1{
-  font-family: 'SourceSerifPro-Regular', sans-serif;
- }
- .p{
+.titlebox * {
+  font-family: "Oswald-Light", sans-serif;
+}
+.titlebox h1 {
+  font-family: "SourceSerifPro-Regular", sans-serif;
+}
+.p {
   width: fit-content;
+  padding: 1%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.img {
+  width: 50%;
 
+  height: 100%;
+}
+.regionDetail {
+  display: flex;
+  flex-direction: row;
+  
+  width: 100%;
+  margin: 0% 10%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.item1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  font-size: 2rem;
+}
+ .activities{
+  margin-top: 10rem;
+  width: 100%;
+  background-color: gray;
+  margin: 3%;
+ }
+.activities 
+ .turismDetail {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
  
-padding: 1%;
-margin: 0 auto;
-box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;}
-  .img{
-    width: 50%;
-
-    height: 100%;
-   
-  }
-
-  .item1 img{
-    
-   width: 130%;
-   height: 100%;
-   
-    
-  }
-  .item2{
-    margin: 9% 12% 7% 12%;
-    padding: 5%;
-    font-size: 20px;
-    background:#f2f2f2;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    
-  }
-
-  .item3{
-   text-align: left;
-    margin: 3.5% 12% 12% 12%;
-    font-size: 20px;
-
-  }
-
-  .item3 *{
-    font-family: 'Oswald-Light', sans-serif;
-    margin-top: 1.5%;
-  }
- 
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.activity{
+padding: 5%;
+border: black solid thin;
+}
+.turismDetail div{
+  font-size: 1.5rem;
+}

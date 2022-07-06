@@ -21,25 +21,19 @@ function Activities() {
   const filterActivity = (e) => {
 
     e.preventDefault();
-    if (e.target.value === 'all') {
-      navigate('/countries');
-
-
-    } else {
+   
       dispatch(filterByType(e.target.value));
 
 
-    }
+    
   };
 
   const filterRegion = (e) => {
 
     e.preventDefault();
-    if (e.target.value === 'all') {
-      navigate('/countries');
-    } else {
+ 
       dispatch(filterByRegion(e.target.value));
-    }
+    
   };
 
   useEffect(() => {

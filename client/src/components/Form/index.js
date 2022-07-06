@@ -22,7 +22,7 @@ function Form() {
   );
   const navigate = useNavigate();
   const dispatch = useDispatch();
- /*  const regexNotEmpty = /(?!^$)/; */
+ const regexNotEmpty = /(?!^$)/;  
 
   console.log(allCountries.length);
   function changeHandle(event) {
@@ -61,18 +61,20 @@ function Form() {
       setErrorMsg("You need to specify a valid name.");
     } else if (!input.duration) {
       setErrorMsg("You need to specify a description");
-    } else {
+    } else if (!input.countries.length) {
+      setErrorMsg("You need to select at least one country");
+    }else {
       setErrorMsg("");
     }
   }
 
-/*   function deleteFromList(name, id) {
+   function deleteFromList(name, id) {
     setInput((prevInput) => ({
       ...prevInput,
       [name]: prevInput[name].filter((e) => e !== id),
     }));
   }
- */
+ 
   useEffect(() => {
     if (!allCountries.length) {
       dispatch(getCountries(""));
@@ -92,7 +94,8 @@ function Form() {
                 <h1 className={style.submitTitle}>Prepare your Activity</h1>
                 <div className={style.boxTitle}>
                   <div>
-                    <label>Name*</label>
+                    <label className={!regexNotEmpty.test(input.name) 
+					? style.error : ''}>Name*</label>
                     <div>
                       <input
                         type="text"
@@ -104,24 +107,13 @@ function Form() {
                     </div>
                   </div>
 
+             
                   <div>
-                    <label>difficultly</label>
-                    <div>
-                      0
-                      <input
-                        type="range"
-                        name="difficultly"
-                        onChange={changeHandle}
-                        min="0"
-                        max="5"
-                      ></input>
-                      5
-                    </div>
-                  </div>
-                  <div>
-                    <label>countries:</label>
-                    <div>
+                    <label className={input.countries.length
+					?  '' : style.error}>countries:</label>
+                    <div className={style.addCountry}>
                       <select
+                       className={style.selectCountry}
                         name="countries"
                         onChange={changeHandle}
                         value="0"
@@ -136,10 +128,25 @@ function Form() {
                     </div>
                   </div>
                 </div>
+                <div  className={style.difficultly}>
+                    <label>difficultly</label>
+                    <div>
+                      0
+                      <input
+                        type="range"
+                        name="difficultly"
+                        onChange={changeHandle}
+                        min="0"
+                        max="5"
+                      ></input>
+                      5
+                    </div>
+                  </div>
                 <div className={style.boxDesc}>
                   <div className={style.recipeText}>
                     <div>
-                      <label>Duration*</label>
+                      <label className={!regexNotEmpty.test(input.duration  ) 
+					? style.error : ''}>Duration*</label>
                       <div>
                         <textarea
                           name="duration"
@@ -166,12 +173,26 @@ function Form() {
                 </div>
               </div>
               <div></div>
-              <button onClick={submitHandle}>
+              <button onClick={submitHandle}
+              disabled={!!errorMsg}>
                 <h2>Submit Recipe</h2>
               </button>
             </form>
           </div>
-       
+         
+          <div className={style.selectedCountry}>
+          Selected countries
+                  {input.countries?.map((country) => (
+                        <button
+                          key={country}
+                          onClick={() => deleteFromList("countries", country)}
+                          
+                        >
+                          {allCountries?.find(countries => countries.id === country).name}[x]
+                        </button>
+                      ))}
+                  </div>
+                  <p className={style.errorMsg} key='error' >{errorMsg}</p>
       </div>
     </>
   );

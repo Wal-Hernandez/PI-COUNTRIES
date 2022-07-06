@@ -42,7 +42,8 @@ function getCountries(state, payload) {
 }
 function filterRegion(state, payload) {
   let response = [];
-  if (payload === "All") {
+  console.log(payload)
+  if (payload === "all") {
     response = state.allCountries;
   } else {
     let id = parseInt(payload);

@@ -35,34 +35,55 @@ function CountryDetail() {
             </div>
           </div>
           <hr></hr>
-          <div className={style.item2}>
-            region
-            <div className={style.data}>
-              <div>{countryDetail.continents}</div>
+          <div className={style.regionDetail}>
+            <div className={style.item}>
+              id:
+              <div> {countryDetail.id}</div>
+            </div>
+            <div className={style.item}>
+              Region:
+              <div className={style.data}>
+                <div>{countryDetail.region}</div>
+              </div>
+            </div>
+            <div className={style.item}>
+              Capital:
+              <div>{countryDetail.capital}</div>
+            </div>
+            <div className={style.item}>
+              subregion:
+              <div>{countryDetail.subregion}</div>
             </div>
           </div>
+          <br></br>
+          <br></br>
+          <div className={style.regionDetail}>
+            <div className={style.item}>area: {countryDetail.area}km²</div>
+            <div className={style.item}>
+              population: {countryDetail.population}
+            </div>
+          </div>
+          <a href="#turism"> Turism activities </a>
+          <div className={style.activities} id="turism"> 
+       
+            
+            {countryDetail.activities?.map((e) => {
+              return (
+                <div key={e.id} className={style.activity}>
+                  <div><h1>{e.name}</h1></div>
 
-          <div className={style.item3}>
-            capital
-            <div>{countryDetail.capital}</div>
-          </div>
-          <div className={style.item3}>
-            subregion
-            <div>{countryDetail.subregion}</div>
-            <div>{countryDetail.area}</div>
-            <div>{countryDetail.population}</div>
-            <div>
-              {countryDetail.activities?.map((e) => {
-                return (
-                  <div key={e.id}>
-                    {e.name}
-                    {e.difficultly}
-                    {e.duration}
-                    {e.season}
+                  <div className={style.turismDetail}>
+                    <div>
+                    <h2>difficultly</h2>
+                  <div>{e.difficultly}</div></div>
+                  <div><h2>Duration</h2>
+                  <div>{e.duration}</div></div>
+                  <div><h2>Season</h2>
+                  <div>{e.season}</div></div>
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </>
