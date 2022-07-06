@@ -16,7 +16,7 @@ function Form() {
     countries: [],
     season: "Verano",
   });
-  console.log(input);
+ 
   const {allCountries, season } = useSelector(
     (store) => store
   );
@@ -24,7 +24,7 @@ function Form() {
   const dispatch = useDispatch();
  const regexNotEmpty = /(?!^$)/;  
 
-  console.log(allCountries.length);
+  
   function changeHandle(event) {
     let { name, value } = event.target;
 

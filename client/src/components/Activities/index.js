@@ -39,7 +39,7 @@ function Activities() {
   useEffect(() => {
     dispatch(getActivities());
   }, []);
-  console.log(activities)
+
   return (
     <div className={style.background}>
       <div className={style.component}>

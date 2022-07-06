@@ -1,6 +1,6 @@
 import style from './styles/App.module.css';
 import React from 'react';
-import { Route, Routes} from 'react-router-dom';
+import { Route, Routes,Navigate} from 'react-router-dom';
 import Home from './components/Home';
 import Landing from './components/Landing';
 import NavBar from './components/NavBar';
@@ -21,6 +21,7 @@ return (
         <NavBar /></div>
         <CountryDetail /> </>} />
       <Route path="/create" element={<Form />} />
+      <Route path='*' element={<Navigate to='/' />} />
     </Routes>
   </div>
 );

@@ -4,7 +4,7 @@ import style from './style.module.css';
 
 function index() {
     return (
-        <div className={style}>
+        <div className={style.container}>
             <h1>UNKNOW PAGE X.X</h1>
         </ div>
     )

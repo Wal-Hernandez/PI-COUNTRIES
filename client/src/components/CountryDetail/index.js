@@ -19,9 +19,9 @@ function CountryDetail() {
       dispatch(getCountryDetails(id));
     }
   }, [id, dispatch]);
-  console.log(countryDetail);
+  
   if (loading) return <Loading />;
-  else if (!countryDetail) return <ErrorPage />;
+  else if (!countryDetail.name) return <ErrorPage />;
   else
     return (
       <>

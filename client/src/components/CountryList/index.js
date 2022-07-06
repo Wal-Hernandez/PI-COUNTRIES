@@ -7,7 +7,6 @@ import {
   getCountries,
   setLoading,
   searchCountries,
-  resetResponse
 } from "../../actions/index.js";
 import Loading from "../Loading";
 import Card from "../Card";
@@ -22,7 +21,6 @@ function CountryList() {
     allCountries,
   } = useSelector((state) => state);
 
-  console.log(showedCountries);
 
   const dispatch = useDispatch();
 
