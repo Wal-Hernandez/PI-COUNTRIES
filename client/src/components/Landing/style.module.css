@@ -49,19 +49,3 @@ button:hover {
 
 
 
-@media (max-width: 600px) {
-    .component{
-        background-image: url('../../utils/start-celu.png');
-    }
-    .component button {    
-      
-       
-        padding: 25% 0% 25% 30%;
-        
-    }
-    .title{
-        font-size:1.8rem;
-    }
-}
-
-

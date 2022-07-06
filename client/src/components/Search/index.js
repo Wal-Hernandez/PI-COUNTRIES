@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import style from "./style.module.css";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector,useDispatch } from "react-redux";
 import searchImg from "../../utils/search.png";
+import { resetResponse } from "../../actions";
+
 function Search() {
   const { showedCountries } = useSelector((state) => state);
 
@@ -10,12 +12,15 @@ function Search() {
 
   const navigate = useNavigate();
 
+  const dispatch = useDispatch()
+
   function onSearch(e) {
     e.preventDefault();
 
     if (input) {
       navigate(`/countries?name=${input}`);
     } else {
+      dispatch(resetResponse());
       navigate(`/countries`);
     }
   }

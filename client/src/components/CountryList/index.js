@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, NavLink } from "react-router-dom";
 import style from "./style.module.css";
-import pred_img from "../../utils/game_default.png";
+import pred_img from "../../utils/country_default.png";
 import {
   getCountries,
   setLoading,
   searchCountries,
-  resetResponse,
+  resetResponse
 } from "../../actions/index.js";
 import Loading from "../Loading";
 import Card from "../Card";
@@ -39,7 +39,7 @@ function CountryList() {
 
   /* FILTERS */
   useEffect(() => {
-    if (!allCountries.length) {
+    if (!allCountries.length ) {
       if (!loading) dispatch(setLoading());
       dispatch(getCountries(""));
     }

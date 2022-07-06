@@ -23,7 +23,7 @@ export default function Card({ id, name, image, region }) {
             <h3> {name} </h3>
           </div>
           <div className={style.info}>
-            <p>{region}</p>
+            <p>Region: {region}</p>
           </div>
         </div>
       </div>

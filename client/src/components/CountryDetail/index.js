@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import style from "./style.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
-import pred_img from "../../utils/game_default.png";
+import pred_img from "../../utils/country_default.png";
 import { getCountryDetails, setLoading } from "../../actions/index.js";
 import Loading from "../Loading";
 import ErrorPage from "../ErrorPage";

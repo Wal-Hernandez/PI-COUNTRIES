@@ -104,6 +104,7 @@ function rootReducer(state = initialState, action) {
       };
 
     case RESET_RESPONSE:
+      console.log("1")
       return {
         ...state,
         showedCountries: state.allCountries,
